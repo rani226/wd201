@@ -70,8 +70,12 @@ const todoList = () => {
 
       for (let i = 0; i < list.length; i++) {
           if (!list[i].completed) {
-              output += `[] ${list[i].title} ${list[i].dueDate}\n`;
-          } else {
+            if (list[i].dueDate === today){
+                output += `[] ${list[i].title}\n`;
+            }else{
+                output += `[] ${list[i].title} ${list[i].dueDate}\n`;
+            }
+         } else {
               output += `[X] ${list[i].title}\n`;
           }
       }
