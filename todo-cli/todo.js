@@ -9,7 +9,7 @@ const todoList = () => {
       all[index].completed = true;
   };
 
-  const date = new Date("2023-12-18");
+  const date = new Date("2023-12-19");
 
   const overdue = () => {
       const yesterday = new Date(date);
@@ -29,7 +29,7 @@ const todoList = () => {
   };
 
   const dueToday = () => {
-      const today = new Date("2023-12-18");
+      const today = new Date("2023-12-19");
      // console.log(today);
 
       const duet = [];
@@ -47,7 +47,7 @@ const todoList = () => {
   };
 
   const dueLater = () => {
-      const tomorrow = new Date("2023-12-18");
+      const tomorrow = new Date("2023-12-19");
       tomorrow.setDate(date.getDate() + 1);
      // console.log(tomorrow);
 
