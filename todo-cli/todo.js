@@ -67,19 +67,17 @@ const todoList = () => {
 
   const toDisplayableList = (list) => {
       let output = "";
-
       for (let i = 0; i < list.length; i++) {
           if (!list[i].completed) {
             if (list[i].dueDate === today){
-                output += `[] ${list[i].title}\n`;
+                output += `[ ] ${list[i].title}`;
             }else{
-                output += `[] ${list[i].title} ${list[i].dueDate}\n`;
+              output += `[ ] ${list[i].title} ${list[i].dueDate}\n`;
             }
          } else {
-              output += `[X] ${list[i].title}\n`;
+              output += `[x] ${list[i].title}\n`;
           }
       }
-
       return output;
   };
 
